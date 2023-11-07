@@ -26,11 +26,11 @@ function rotateString(s, goal) {
   return false;
 
   // Different Approach
-  //   return s.concat(s).includes(goal);
+  // return s.concat(s).includes(goal);
 }
 
 console.log(rotateString("abcde", "bcdea"));
 
 /*
-    Time Complexity: O(N)
+    Time Complexity: O(N) where N is the length of s
 */
