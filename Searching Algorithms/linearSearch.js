@@ -25,3 +25,4 @@ console.log(str.match("script"));
 console.log(str.search("script"));
 console.log(str.indexOf("script"));
 console.log(str.includes("script"));
+
