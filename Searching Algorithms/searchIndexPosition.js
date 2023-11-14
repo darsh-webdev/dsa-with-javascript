@@ -35,7 +35,7 @@ function searchIndexPosition(nums, target) {
   }
 }
 
-console.log(searchIndexPosition([1, 3, 5, 6], 2));
+console.log(searchIndexPosition([1, 3, 5, 6], 0));
 
 /*
     Time Complexity: O(log(N))
