@@ -13,16 +13,14 @@ function twoSum(nums, target) {
 
   for (let i = 0; i < nums.length; i++) {
     if (numsObj.hasOwnProperty(target - nums[i])) {
-      console.log([i, numsObj[i]]);
+      return [i, numsObj[target - nums[i]]];
     } else {
       numsObj[nums[i]] = i;
     }
   }
-
-  console.log(numsObj);
 }
 
-console.log(twoSum([2, 7, 11, 15], 9));
+console.log(twoSum([3, 2, 4], 6));
 
 /*
    Time Complexity: O(N)
