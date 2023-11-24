@@ -174,3 +174,30 @@ console.log(arr1);
   Time Complexity: O(Nlog(N))
   Space Complexity: O(N)
 */
+
+/* --------------- Quick Sort ----------------- */
+
+const quickSort = (arr) => {
+  if (arr.length < 2) return arr;
+  let pivotIndex = Math.floor(Math.random() * arr.length);
+
+  let left = [];
+  let right = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (i === pivotIndex) continue;
+    if (arr[i] < arr[pivotIndex]) {
+      left.push(arr[i]);
+    } else {
+      right.push(arr[i]);
+    }
+  }
+
+  return [...quickSort(left), arr[pivotIndex], ...quickSort(right)];
+};
+
+console.log(quickSort([10, 34, 20, 39, 49, 41, 25, 11]));
+
+/*
+  Time Complexity: O(Nlog(N))
+  Space Complexity: O(N)
+*/
